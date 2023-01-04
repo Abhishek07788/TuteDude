@@ -1,0 +1,145 @@
+.mainDiv {
+  width: 73%;
+  margin: auto;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.mainDiv > h3 {
+  color: #800080;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+/* ------------------ Card div ---------------- */
+.CardMainDiv {
+  display: flex;
+  gap: 30px;
+  color: #ffffff;
+  width: 100%;
+  overflow: auto;
+}
+
+.CardMainDiv > div {
+  background: linear-gradient(270deg, #800080 0%, #ff864c 100%);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 228px;
+  padding: 0px 20px;
+}
+
+.CardNameTime {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+  width: 358px;
+}
+
+.CardNameTime > h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.CardNameTime > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 5px;
+}
+
+.CardNameTime + p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 0px;
+  margin: 5px;
+}
+
+/* -----------.courses------------- */
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0px 5px;
+  overflow-x: auto;
+  height: 100px;
+  gap: 0px;
+}
+
+.courses > div {
+  padding: 0px 5px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.courses > div > p {
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 1px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  margin: 0px;
+}
+
+.courses + h2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px;
+}
+/* ----------Price--------- */
+.courses + h2 > span {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+/* ------------------ */
+.footer {
+  color: #800080;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media all and (min-width: 0px) and (max-width: 768px) {
+  .mainDiv {
+    width: 83%;
+  }
+
+  .CardMainDiv {
+    flex-direction: column;
+    margin-left: -10px;
+    overflow: hidden;
+  }
+
+  .CardNameTime {
+    width: 100%;
+  }
+}
+
+/* ------------Scroll------------ */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(181, 172, 172);
+}

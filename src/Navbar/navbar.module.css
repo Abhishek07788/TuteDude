@@ -1,0 +1,52 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 74px 6px;
+  color: #800080;
+  font-size: 18px;
+  font-weight: 500;
+  background: #ffffff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.option > p {
+  color: rgba(128, 0, 128, 0.25);
+}
+
+.option > div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* -------------------------Media quarry-------- */
+@media all and (min-width: 0px) and (max-width: 768px) {
+  .nav {
+    padding: 20px 35px 6px;
+  }
+  .option > p {
+    display: none;
+  }
+  .option > div {
+    color: #ffff;
+    background: #800080;
+    padding: 12px 25px;
+    border-radius: 10px;
+    gap: 10px;
+  }
+  .option > div > img {
+    display: none;
+  }
+}
