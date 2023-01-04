@@ -60,6 +60,7 @@
   .MapDiv {
     grid-template-columns: repeat(1, 1fr);
     margin-left: 20px;
+    width: 95%;
   }
   .MapDiv > div {
     width: 100%;

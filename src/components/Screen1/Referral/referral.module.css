@@ -1,5 +1,5 @@
 .ReferralMainDiv1 {
-  width: 80%;
+  width: 90%;
   margin: auto;
   text-align: left;
 }
@@ -16,7 +16,7 @@
 .ReferralMainDiv2 {
   display: flex;
   padding: 10px;
-  gap: 160px;
+  justify-content: space-between;
 }
 
 .Box1 {
@@ -42,7 +42,7 @@
   justify-content: space-between;
   background: #ffffff;
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px;
   padding-bottom: 35px;
   box-shadow: 0px 3px 100px rgba(0, 0, 0, 0.1);
   grid-template-areas:
@@ -79,12 +79,6 @@
 }
 
 /* ------------------------- */
-.ReferralCode {
-  color: #800080;
-  display: flex;
-  flex-direction: column;
-}
-
 .ReferralCode > h3 {
   color: #800080;
   font-weight: 600;
@@ -99,24 +93,27 @@
   text-align: center;
 }
 .ReferralCode > div > h4 {
+  color: #800080;
   letter-spacing: 1.5rem;
-  line-height: 30px;
+  line-height: 40px;
   font-size: 20px;
   font-weight: 500;
   margin: auto;
   border-radius: 8px;
-  background: #ffff;
-  padding: 10px 30px 10px 47px;
+  background: #ffffff;
 }
 
 /* ------Media quarry for mobile screen -------- */
 @media all and (min-width: 0px) and (max-width: 768px) {
   /* ------------------------ */
+  .ReferralMainDiv1 {
+    width: 85%;
+  }
   .ReferralMainDiv2 {
     flex-direction: column;
     gap: 20px;
+    width: 100%;
   }
-
   .Box1,
   .Box2,
   .Box3 {
@@ -127,20 +124,40 @@
     margin-top: 25px;
   }
 
+  .Box1 > h2,
+  .Box2 > h2,
+  .Box3 > h2 {
+    font-size: 23px;
+    line-height: 28px;
+  }
+
+  .Box4 > p {
+    padding: 4px 10px;
+    width: 100px;
+    font-size: 12px;
+  }
+
   .ReferralMainDiv2 > div:first-child {
     display: grid;
     padding: 0px 30px;
-    gap: 0px;
+    gap: 10px;
     grid-template-areas:
       "A B"
       "C D";
   }
-  .ReferralCode > div {
-    background: linear-gradient(270deg, #800080 0%, #ff864c 100%);
-    text-align: center;
-  }
   .ReferralCode > div > h4 {
-    letter-spacing: 1.5em;
-    padding: 10px 30px 10px 18%;
+    padding: 0px;
+  }
+}
+
+/* ------Media quarry for mobile screen -------- */
+@media all and (min-width: 768px) and (max-width: 985px) {
+  /* ------------------------ */
+  .ReferralMainDiv2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .ReferralCode > div {
+    width: 80%;
   }
 }

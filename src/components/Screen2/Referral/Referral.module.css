@@ -77,6 +77,12 @@
     color: #800080;
     gap: 10px;
   }
+
+  .Wallet {
+    box-shadow: rgba(171, 164, 164, 0.24) 0px 3px 8px;
+    padding: 0px 20px;
+    margin-left: 10px;
+  }
   .Wallet > p {
     font-size: 14px;
     line-height: 18px;
